@@ -1,10 +1,9 @@
 #include<stdio.h>
 #include<math.h>
 int main(){
-   double a, b, c, discriminant, root1, root2, realPart, imaginePart;
+    double a, b, c, discriminant, root1, root2, realPart, imaginePart;
     printf("Enter coefficients a, b and c: ");
     scanf("%lf %lf %lf", &a, &b, &c);
-
     discriminant = (b * b) -( 4 * a * c);
     if(discriminant > 0){
          root1 = (-b + sqrt(discriminant)) / (2 * a);
@@ -18,7 +17,5 @@ int main(){
         imaginePart = sqrt(-discriminant) / (2 * a);
         printf("root1 = %.2lf+%.2lfi and root2 = %.2f-%.2fi", realPart, imaginePart, realPart, imaginePart);
     }
-
-
     return 0;
 }
